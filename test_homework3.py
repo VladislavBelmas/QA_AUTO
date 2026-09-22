@@ -38,6 +38,8 @@ def test_visibility_of_all_buttons(driver, xpath_locator):
     assert button.is_displayed()
 
 
+# без наводки очевидно тест на видимость контактов падает, а вилку в первом тесте будто колхоз делать,
+# по крайней мере для одного теста
 def test_find_contacts_with_action(driver):
     parent = driver.find_element(By.XPATH, '/html/body/div[1]/div[7]/div/div/div[3]/div/div[3]')
     action = ActionChains(driver)
