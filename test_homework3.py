@@ -68,13 +68,3 @@ def test_clicks(driver):
     message = driver.find_element(By.XPATH, "//*[contains(text(), 'Запишитесь на ')]")
     assert message
 
-
-# def test_find_logo(driver):
-#     logo = driver.find_elements(By.XPATH, '/html/body/div[1]/div[7]/div/div/div[4]/a/img')
-#     assert len(logo) == 1 and logo[0].is_displayed()
-#
-#
-# def test_find_programs_link(driver):
-#     button = driver.find_element(By.XPATH, '/html/body/div[1]/div[7]/div/div/div[3]/div/div[1]')
-#     text = driver.find_element(By.XPATH,'/html/body/div[1]/div[7]/div/div/div[3]/div/div[1]/a/div')
-#     assert button.is_displayed() and text.is_displayed()
